@@ -1,0 +1,484 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	linreg.h	/^	matrix_t* A;$/;"	m	struct:linreg_t
+ABS	signal.h	66;"	d
+Ainv	linreg.h	/^	matrix_t* Ainv;$/;"	m	struct:linreg_t
+At	linreg.h	/^	matrix_t* At;$/;"	m	struct:linreg_t
+B	kalman.h	/^	matrix_t* B; \/* control input matrix *\/$/;"	m	struct:__anon3
+BCN_ANY	beacon.h	13;"	d
+BCN_IGNORED	beacon.h	15;"	d
+BCN_ISREF	beacon.h	17;"	d
+BCN_POSKNOWN	beacon.h	16;"	d
+BCN_VISIBLE	beacon.h	14;"	d
+BEACON_H	beacon.h	5;"	d
+BITS_PER_UNIT	signal.h	56;"	d
+BUFFER_LEN	signal.h	34;"	d
+CALC_POSITION	server.c	29;"	d	file:
+CALIBRATOR_H	calibrator.h	3;"	d
+CARRIER_FREQ	signal.h	13;"	d
+CIRCBUF_H	circbuf.h	6;"	d
+DEBUG	messaging.c	9;"	d	file:
+DISPLACE	main.c	27;"	d	file:
+DISTMAX	signal.h	33;"	d
+DO_MLAT	server.c	28;"	d	file:
+DT_MS	kalman.h	9;"	d
+ERRORS_H	errors.h	3;"	d
+ERR_ARRAY_DIM	errors.h	18;"	d
+ERR_BUFFEROVERRUN	errors.h	20;"	d
+ERR_BUFFERUNDERRUN	errors.h	21;"	d
+ERR_COMMUNICATION	errors.h	16;"	d
+ERR_MALLOC	errors.h	11;"	d
+ERR_MTR_DIM	errors.h	17;"	d
+ERR_NODENOTFOUND	errors.h	12;"	d
+ERR_NOERROR	errors.h	10;"	d
+ERR_NOTANUMBER	errors.h	13;"	d
+ERR_NOTENOUGHDATA	errors.h	19;"	d
+ERR_READERROR	errors.h	14;"	d
+ERR_WRITEERROR	errors.h	15;"	d
+F	kalman.h	/^	matrix_t* F; \/* transition matrix *\/$/;"	m	struct:__anon3
+FIXED_POINT_MATH	signal.h	36;"	d
+H	kalman.h	/^	matrix_t* H; \/* transform matrix state domain -> measurement domain *\/$/;"	m	struct:__anon3
+K	kalman.h	/^	matrix_t* K; \/* Kalman gain *\/$/;"	m	struct:__anon3
+KALMAN_H	kalman.h	3;"	d
+KF_SAMPLES_STEADY	kalman.h	14;"	d
+KF_STEADY_DELTA	kalman.h	13;"	d
+LAST_BID	server.c	27;"	d	file:
+LINREG_H	linreg.h	5;"	d
+LOG_DATA	server.c	31;"	d	file:
+LR_LEN	linreg.h	11;"	d
+MAKE_DISTMATRIX	server.c	30;"	d	file:
+MATH_FIXED_H	math_fixed.h	3;"	d
+MATH_FLOAT_H	math_float.h	3;"	d
+MATRIX_H	matrix.h	3;"	d
+MAX	signal.h	71;"	d
+MAX_BEACON_ID	sensor.c	14;"	d	file:
+MAX_MCANUM	clbr_test.c	18;"	d	file:
+MAX_RESETS	clbr_test.c	19;"	d	file:
+MAX_STDDEV	clbr_test.c	15;"	d	file:
+MAX_TOF_FAILURE	clbr_test.c	20;"	d	file:
+MEAS_NOISE	kalman.h	11;"	d
+MESSAGING_H	messaging.h	3;"	d
+METER2CM	signal.h	51;"	d
+MIN	signal.h	76;"	d
+MOVAVG_H	movavg.h	5;"	d
+MSG_START	messaging.h	7;"	d
+MSG_TYPE_CMD	messaging.h	9;"	d
+MSG_TYPE_DST	messaging.h	8;"	d
+MSG_TYPE_RAW	messaging.h	10;"	d
+MTR_DIAG	matrix.h	/^	MTR_DIAG = (1<<2), \/* diagonal matrix *\/$/;"	e	enum:__anon4
+MTR_ID	matrix.h	/^	MTR_ID   = (1<<1), \/* identity matrix *\/$/;"	e	enum:__anon4
+MTR_ZERO	matrix.h	/^	MTR_ZERO = (1<<3)  \/* zero matrix *\/$/;"	e	enum:__anon4
+M_PI	math_fixed.h	8;"	d
+M_PI	math_float.h	8;"	d
+M_PI	signal.c	10;"	d	file:
+M_TWOPI	math_fixed.h	11;"	d
+M_TWOPI	math_float.h	11;"	d
+M_TWOPI	signal.c	13;"	d	file:
+NDEBUG	serial.c	12;"	d	file:
+NOISE	main.c	26;"	d	file:
+P	kalman.h	/^	matrix_t* P; \/* estimated covariance matrix *\/$/;"	m	struct:__anon3
+P	linreg.h	/^	matrix_t* P;$/;"	m	struct:linreg_t
+PLANIMETRICS_H	planimetrics.h	3;"	d
+POSITION_H	position.h	3;"	d
+PULSE_DUR_MSEC	signal.h	31;"	d
+PULSE_LEN_SMPL	signal.h	/^static const size_t PULSE_LEN_SMPL = ((PULSE_DUR_MSEC*REC_SAMPLE_RATE\/1000));$/;"	v
+P_	kalman.h	/^	matrix_t* P_; \/* predicted covariance matrix *\/$/;"	m	struct:__anon3
+Pinv	linreg.h	/^	matrix_t* Pinv;$/;"	m	struct:linreg_t
+Q	kalman.h	/^	matrix_t* Q; \/* process noise covariance matrix (used for prediction) *\/$/;"	m	struct:__anon3
+Q_SAMPLING_M	signal.h	23;"	d
+R	kalman.h	/^	matrix_t* R; \/* measurement noise covariance matrix (used for estimation\/adjustment)*\/$/;"	m	struct:__anon3
+REC_SAMPLE_RATE	signal.h	30;"	d
+REMOVE_DC	signal.c	21;"	d	file:
+RESET_STDDEV	clbr_test.c	17;"	d	file:
+SAMPLE_MAX	signal.h	61;"	d
+SAMPLE_MAX	signal.h	63;"	d
+SENSOR_H	sensor.h	3;"	d
+SERIAL_H	serial.h	3;"	d
+SERVER_H	server.h	3;"	d
+SIGNAL_H	signal.h	6;"	d
+SIG_THRESHOLD	signal.h	35;"	d
+SNS_ANY	sensor.h	14;"	d
+SNS_MLAT_OK	sensor.h	16;"	d
+SNS_USED	sensor.h	15;"	d
+SOLVE_H	solve.h	3;"	d
+STAGE_H	stage.h	3;"	d
+TEST_SNS_ID	server.c	26;"	d	file:
+TRANS_NOISE	kalman.h	10;"	d
+TYPES_H	types.h	2;"	d
+VEHICLE_H	vehicle.h	3;"	d
+VEH_ANY	vehicle.h	13;"	d
+VEH_LEN	main.c	25;"	d	file:
+VEH_MAX_SPEED_CMPS	signal.h	53;"	d
+VEH_MOVING	vehicle.h	14;"	d
+VEH_WTH	main.c	24;"	d	file:
+W_NOISE	kalman.h	12;"	d
+_x	kalman.h	/^	matrix_t* _x; \/* previous state *\/$/;"	m	struct:__anon3
+b	linreg.h	/^	matrix_t* b;$/;"	m	struct:linreg_t
+b_flags	sensor.h	/^ 	uint8_t*  b_flags;$/;"	m	struct:sensor_t
+b_score	sensor.h	/^	double*   b_score;$/;"	m	struct:sensor_t
+bcn_add_to_list	beacon.c	/^error_t bcn_add_to_list(beaconnode_t** beaconlist, beacon_t* b)$/;"	f
+bcn_append	beacon.c	/^error_t bcn_append(beaconnode_t** beaconlist, beacon_t* beacon)$/;"	f
+bcn_count	beacon.c	/^uint8_t bcn_count(const beaconlist_t const *bl, const uint8_t mask)$/;"	f
+bcn_get_byID	beacon.c	/^beaconnode_t* bcn_get_byID(beaconnode_t** beaconlist, const uint8_t id)$/;"	f
+bcn_ignore	beacon.c	/^void bcn_ignore(beacon_t* const beacon)$/;"	f
+bcn_ignore_byID	beacon.c	/^error_t bcn_ignore_byID(beaconnode_t** const beaconlist, const int8_t id)$/;"	f
+bcn_init	beacon.c	/^beacon_t bcn_init(const uint8_t id, const cm_t x, const cm_t y, const cm_t z)$/;"	f
+bcn_is_ignored	beacon.c	/^int8_t bcn_is_ignored(const beacon_t const *beacon)$/;"	f
+bcn_is_visible	beacon.c	/^int8_t bcn_is_visible(const beacon_t* const beacon)$/;"	f
+bcn_list_beacons	beacon.c	/^void bcn_list_beacons(beaconnode_t** beaconlist)$/;"	f
+bcn_new	beacon.c	/^beacon_t bcn_new(const uint8_t id)$/;"	f
+bcn_print	beacon.c	/^void bcn_print(const beacon_t* const beacon)$/;"	f
+bcn_read_config	beacon.c	/^error_t bcn_read_config(const char* fn, beaconlist_t* bl)$/;"	f
+bcn_remove_byID	beacon.c	/^error_t bcn_remove_byID(beaconnode_t** beaconlist, const uint8_t id)$/;"	f
+beacon	beacon.h	/^	beacon_t            *beacon;$/;"	m	struct:beaconnode_t
+beacon_count_visible	beacon.c	/^uint8_t beacon_count_visible(const beaconlist_t const *beaconlist)$/;"	f
+beacon_id	messaging.h	/^    uint8_t  beacon_id; \/** Beacon ID *\/$/;"	m	struct:__anon5
+beacon_t	beacon.h	/^    typedef struct beacon_t {$/;"	s
+beacon_t	beacon.h	/^    } beacon_t;$/;"	t	typeref:struct:beacon_t
+beaconlist	sensor.h	/^	beaconlist_t    beaconlist;$/;"	m	struct:sensor_t
+beaconlist	stage.h	/^    beaconlist_t beaconlist;$/;"	m	struct:__anon10
+beaconlist_t	beacon.h	/^    typedef beaconnode_t* beaconlist_t;$/;"	t
+beaconnode_t	beacon.h	/^    typedef struct beaconnode_t {$/;"	s
+beaconnode_t	beacon.h	/^    } beaconnode_t;$/;"	t	typeref:struct:beaconnode_t
+beep	server.c	/^void *beep(void* arg) {$/;"	f
+bl	clbr_test.c	/^static beaconlist_t	bl;$/;"	v	file:
+bn	clbr_test.c	/^static beaconnode_t*	bn;$/;"	v	file:
+calc_	clbr_test.c	/^void calc_()$/;"	f
+calibrator_t	calibrator.h	/^} calibrator_t;$/;"	t	typeref:struct:__anon1
+capacity	circbuf.h	/^	size_t       capacity;$/;"	m	struct:circbuf_t
+cb_free	circbuf.c	/^error_t cb_free(circbuf_t** const cbuf)$/;"	f
+cb_get_data	circbuf.c	/^error_t cb_get_data(char* const dest, circbuf_t* const cbuf, const size_t outlen)$/;"	f
+cb_init	circbuf.c	/^error_t cb_init(circbuf_t** const cbuf, const size_t capacity)$/;"	f
+cb_lookup_error	circbuf.c	/^char const* cb_lookup_error(short err)$/;"	f
+cb_put_data	circbuf.c	/^error_t cb_put_data(circbuf_t* const cbuf, const char* const src, const size_t inlen) {$/;"	f
+cb_space_available	circbuf.c	/^size_t cb_space_available(circbuf_t const* cbuf)$/;"	f
+change_sign	kalman.c	/^static double change_sign(const double x)$/;"	f	file:
+circbuf_t	circbuf.h	/^    typedef struct circbuf_t {$/;"	s
+circbuf_t	circbuf.h	/^    } circbuf_t;$/;"	t	typeref:struct:circbuf_t
+clb_calc_for_sbpair	calibrator.c	/^error_t clb_calc_for_sbpair(const double const* tof_dist,$/;"	f
+clb_gain	clbr_test.c	/^static matrix_t *clb_gain;$/;"	v	file:
+clb_make_clb_conf	calibrator.c	/^int clb_make_clb_conf()$/;"	f
+clb_offset	clbr_test.c	/^static matrix_t *clb_offset;$/;"	v	file:
+clb_read_config	calibrator.c	/^error_t clb_read_config(const char* fn, config_t* cfg, matrix_t* c1m, matrix_t* c0m)$/;"	f
+clbr_fac	calibrator.h	/^    double** clbr_fac;$/;"	m	struct:__anon1
+clbr_offset	calibrator.h	/^    double** clbr_offset;$/;"	m	struct:__anon1
+cm_t	types.h	/^typedef double   cm_t;$/;"	t
+cmps_t	types.h	/^typedef double   cmps_t;$/;"	t
+cnt	linreg.h	/^	uint8_t cnt;$/;"	m	struct:linreg_t
+compar_cm	vehicle.c	/^static int compar_cm(const void* v1, const void* v2)$/;"	f	file:
+compar_dbl	sensor.c	/^static int compar_dbl(const void* v1, const void* v2)$/;"	f	file:
+compare_flt	math_float.c	/^static int compare_flt(const void* f1, const void* f2)$/;"	f	file:
+counter	kalman.h	/^	uint64_t counter;$/;"	m	struct:__anon3
+data	circbuf.h	/^	char         *data;$/;"	m	struct:circbuf_t
+data	linreg.h	/^	double data[LR_LEN];$/;"	m	struct:linreg_t
+data	matrix.h	/^        double* data;$/;"	m	struct:matrix_t
+data_size	messaging.h	/^    uint16_t data_size; \/** Data size in bytes. Data is to be sent after the header. *\/$/;"	m	struct:__anon5
+depth	stage.h	/^    cm_t depth;$/;"	m	struct:__anon10
+distances	calibrator.h	/^    double*** distances;$/;"	m	struct:__anon1
+distances	sensor.h	/^	cm_t*           distances;$/;"	m	struct:sensor_t
+dt_ms	kalman.h	/^	int16_t  dt_ms;$/;"	m	struct:__anon3
+dt_s	clbr_test.c	/^static double		dt_s,	mydt_s, prev_mydt_s;$/;"	v	file:
+dt_s	server.c	/^static double		dt_s,	mydt_s, prev_mydt_s;$/;"	v	file:
+dummy1_14	kalman.h	/^	matrix_t* dummy1_14;$/;"	m	struct:__anon3
+dummy1_41	kalman.h	/^	matrix_t* dummy1_41;$/;"	m	struct:__anon3
+dummy1_44	kalman.h	/^	matrix_t* dummy1_44;$/;"	m	struct:__anon3
+dummy2_14	kalman.h	/^	matrix_t* dummy2_14;$/;"	m	struct:__anon3
+dummy2_41	kalman.h	/^	matrix_t* dummy2_41;$/;"	m	struct:__anon3
+dummy2_44	kalman.h	/^	matrix_t* dummy2_44;$/;"	m	struct:__anon3
+dz	kalman.h	/^	matrix_t* dz; \/* measurement error *\/$/;"	m	struct:__anon3
+err	solve.c	/^static volatile error_t err = ERR_NOERROR;$/;"	v	file:
+errArrDim	errors.c	/^static char* errArrDim = "\\"Wrong Array Size.\\"";$/;"	v	file:
+errCommunication	errors.c	/^static char* errCommunication = "\\"Communication Error.\\"";$/;"	v	file:
+errLookup	errors.c	/^char const * errLookup(const error_t code)$/;"	f
+errMalloc	errors.c	/^static char* errMalloc = "\\"Malloc Error.\\"";$/;"	v	file:
+errMtrDim	errors.c	/^static char* errMtrDim = "\\"Wrong Matrix Size.\\"";$/;"	v	file:
+errNoErr	errors.c	/^static char* errNoErr = "\\"No Error.\\"";$/;"	v	file:
+errNodeNotFound	errors.c	/^static char* errNodeNotFound = "\\"Node not found.\\"";$/;"	v	file:
+errNotANumber	errors.c	/^static char* errNotANumber = "\\"Not a number or no real-valued roots.\\"";$/;"	v	file:
+errNotEnoughData	errors.c	/^static char* errNotEnoughData = "\\"Not enough data.\\"";$/;"	v	file:
+errRead	errors.c	/^static char* errRead = "\\"Read Error.\\"";$/;"	v	file:
+errWrite	errors.c	/^static char* errWrite = "\\"Write Error.\\"";$/;"	v	file:
+err_allocation_error	circbuf.c	/^static char const* err_allocation_error = "Could not allocate memory";$/;"	v	file:
+err_buffer_onderrun	circbuf.c	/^static char const* err_buffer_onderrun  = "Buffer onderrun";$/;"	v	file:
+err_buffer_overrun	circbuf.c	/^static char const* err_buffer_overrun   = "Buffer overrun";$/;"	v	file:
+err_no_error	circbuf.c	/^static char const* err_no_error         = "No error";$/;"	v	file:
+error_t	errors.h	/^typedef int16_t  error_t;$/;"	t
+fd	clbr_test.c	/^static int	fd;$/;"	v	file:
+fd	server.c	/^static int		fd;$/;"	v	file:
+fd	server.h	/^	int fd;$/;"	m	struct:__anon9
+firstrun	clbr_test.c	/^static int		firstrun     = 1;$/;"	v	file:
+firstrun	server.c	/^static int		firstrun     = 1;$/;"	v	file:
+fixed_lt	math_fixed.h	/^typedef sample_lt  fixed_lt;$/;"	t
+fixed_t	math_fixed.h	/^typedef sample_t   fixed_t;$/;"	t
+fixed_ult	math_fixed.h	/^typedef sample_ult fixed_ult;$/;"	t
+fixed_ut	math_fixed.h	/^typedef sample_ut  fixed_ut;$/;"	t
+flags	beacon.h	/^	uint8_t flags;     \/** Beacon status (visible, position known, ignored, ...) *\/$/;"	m	struct:beacon_t
+flags	sensor.h	/^	uint8_t      flags;$/;"	m	struct:sensor_t
+flags	vehicle.h	/^	uint8_t      flags;    $/;"	m	struct:__anon11
+fx_mean	math_fixed.c	/^fixed_t fx_mean(const fixed_t* buf, const size_t len) {$/;"	f
+fx_sin	math_fixed.c	/^fixed_t fx_sin(const fixed_t x)$/;"	f
+fx_sinc	math_fixed.c	/^fixed_t fx_sinc(const fixed_t x)$/;"	f
+fx_sqrt	math_fixed.c	/^fixed_ut fx_sqrt(const fixed_ult x)$/;"	f
+gain	linreg.h	/^	double gain;$/;"	m	struct:linreg_t
+gauss	math_float.c	/^float gauss(const float x, const float s)$/;"	f
+generate_burst	signal.c	/^sample_t* generate_burst(const unsigned freq_Hz, const unsigned srate, const unsigned len_us, const float phase)$/;"	f
+get_parabola_extremum_x	math_float.c	/^float get_parabola_extremum_x(const float par_coeffs[3])$/;"	f
+header	messaging.h	/^    uint8_t  header;    \/\/\/< 'Start of Header' byte, flags first byte of the message$/;"	m	struct:__anon5
+i	signal.c	/^static volatile size_t i;$/;"	v	file:
+id	beacon.h	/^	uint8_t id; 	  \/** Beacon ID [0..255] *\/$/;"	m	struct:beacon_t
+id	sensor.h	/^	uint8_t      id;$/;"	m	struct:sensor_t
+id	vehicle.h	/^	uint8_t      id;$/;"	m	struct:__anon11
+in_cnt	circbuf.h	/^	unsigned int in_cnt;$/;"	m	struct:circbuf_t
+inv	server.c	/^double inv(const double x) {return -x;}$/;"	f
+ip_tmp	signal.c	/^static sample_t ip_tmp[BUFFER_LEN];$/;"	v	file:
+kalman_filter_t	kalman.h	/^    } kalman_filter_t;$/;"	t	typeref:struct:__anon3
+kf_adjust_cov	kalman.c	/^error_t kf_adjust_cov(kalman_filter_t* const kf)$/;"	f
+kf_adjust_gain	kalman.c	/^error_t kf_adjust_gain(kalman_filter_t* const kf)$/;"	f
+kf_adjust_state	kalman.c	/^error_t kf_adjust_state(kalman_filter_t* const kf)$/;"	f
+kf_distances	sensor.h	/^	kalman_filter_t*  kf_distances;$/;"	m	struct:sensor_t
+kf_free	kalman.c	/^void kf_free(kalman_filter_t* kf)$/;"	f
+kf_init	kalman.c	/^error_t kf_init(kalman_filter_t* kf) {$/;"	f
+kf_is_steady	kalman.c	/^error_t kf_is_steady(kalman_filter_t const* kf)$/;"	f
+kf_pos	vehicle.h	/^	kalman_filter_t kf_pos;$/;"	m	struct:__anon11
+kf_position_wcs	sensor.h	/^	kalman_filter_t kf_position_wcs;$/;"	m	struct:sensor_t
+kf_predict_cov	kalman.c	/^error_t kf_predict_cov(kalman_filter_t* const kf)$/;"	f
+kf_predict_state	kalman.c	/^error_t kf_predict_state(kalman_filter_t* const kf)$/;"	f
+kf_rot	vehicle.h	/^	kalman_filter_t kf_rot;$/;"	m	struct:__anon11
+kf_set_meas_noise	kalman.c	/^void kf_set_meas_noise(kalman_filter_t * const kf, const double val)$/;"	f
+kf_set_trans_noise	kalman.c	/^void kf_set_trans_noise(kalman_filter_t * const kf, const double val)$/;"	f
+kf_state_t	kalman.h	/^    } kf_state_t;$/;"	t	typeref:struct:__anon2
+kf_update	kalman.c	/^error_t kf_update(kalman_filter_t* const kf, const kf_state_t* const z)$/;"	f
+left	signal.c	/^static volatile size_t left,right;$/;"	v	file:
+len	clbr_test.c	/^static size_t	len[6][6];$/;"	v	file:
+linreg_t	linreg.h	/^    typedef struct linreg_t {$/;"	s
+linreg_t	linreg.h	/^    } linreg_t;$/;"	t	typeref:struct:linreg_t
+lr_calc	linreg.c	/^error_t lr_calc(linreg_t* const lr)$/;"	f
+lr_init	linreg.c	/^error_t lr_init(linreg_t* const lr)$/;"	f
+lr_update_data	linreg.c	/^void lr_update_data(linreg_t* const lr, const double v)$/;"	f
+main	clbr_test.c	/^int main(int argc, char** argv)$/;"	f
+main	main.c	/^int main()$/;"	f
+main	server.c	/^int main(int argc, char** argv)$/;"	f
+main	stubs.c	/^int main()$/;"	f
+main	test.c	/^int main()$/;"	f
+main1	stubs.c	/^int main1()$/;"	f
+main2	main.c	/^int main2(sensorlist_t sl)$/;"	f
+main3	main.c	/^int main3()$/;"	f
+matrix_t	matrix.h	/^    typedef struct matrix_t {$/;"	s
+matrix_t	matrix.h	/^    } matrix_t;$/;"	t	typeref:struct:matrix_t
+mav_dt	clbr_test.c	/^static movavg_t mav_dt;$/;"	v	file:
+mav_dt	server.c	/^static movavg_t mav_dt;$/;"	v	file:
+mav_get_mean	movavg.c	/^double  mav_get_mean(const movavg_t const * mc)$/;"	f
+mav_get_stddev	movavg.c	/^double  mav_get_stddev(const movavg_t const * mc)$/;"	f
+mav_get_z_score	movavg.c	/^double mav_get_z_score(const movavg_t const * mc, const double v)$/;"	f
+mav_init	movavg.c	/^void  mav_init(movavg_t* mc)$/;"	f
+mav_update_mean	movavg.c	/^void  mav_update_mean(movavg_t* mc, const double v)$/;"	f
+mean	math_float.c	/^double mean(const double* const in, const size_t len)$/;"	f
+mean	movavg.h	/^	double mean;$/;"	m	struct:__anon6
+measurement_noise	kalman.h	/^	double   measurement_noise;$/;"	m	struct:__anon3
+median	math_float.c	/^double median(const double* const in, const size_t len)$/;"	f
+message_t	messaging.h	/^}  __attribute__((packed)) message_t;$/;"	t	typeref:struct:__anon5
+mlat_score	sensor.h	/^	double    mlat_score;$/;"	m	struct:sensor_t
+movavg_t	movavg.h	/^    } movavg_t;$/;"	t	typeref:struct:__anon6
+msg	server.h	/^	message_t msg;$/;"	m	struct:__anon9
+msg_read_next_message	messaging.c	/^int msg_read_next_message(message_t* const msg, const int fd, uint8_t* const data)$/;"	f
+mtr_add	matrix.c	/^error_t mtr_add(const matrix_t* const left, const matrix_t* const right, matrix_t* const res)$/;"	f
+mtr_alloc	matrix.c	/^matrix_t* mtr_alloc(const uint8_t nrows, const uint8_t ncols)$/;"	f
+mtr_append_rows	matrix.c	/^error_t mtr_append_rows(matrix_t* const m, const matrix_t* const r)$/;"	f
+mtr_apply_to_pos2d	matrix.c	/^error_t  mtr_apply_to_pos2d(const matrix_t* const m, const position2d_t* const v2d, position2d_t* const res)$/;"	f
+mtr_foreach	matrix.c	/^error_t mtr_foreach(matrix_t* const m, double(*cb)(const double))$/;"	f
+mtr_free	matrix.c	/^void mtr_free(matrix_t* mtr)$/;"	f
+mtr_get	matrix.c	/^double mtr_get(const matrix_t* m, const uint8_t row, const uint8_t col)$/;"	f
+mtr_inverse2x2	matrix.c	/^error_t mtr_inverse2x2(const matrix_t* const m, matrix_t* const res)$/;"	f
+mtr_inverse2x2_	matrix.c	/^matrix_t* mtr_inverse2x2_(const matrix_t* const m)$/;"	f
+mtr_inverse3x3	matrix.c	/^error_t mtr_inverse3x3(const matrix_t* const m, matrix_t* const res)$/;"	f
+mtr_inverse4x4	matrix.c	/^error_t mtr_inverse4x4(const matrix_t* const m, matrix_t* const res)$/;"	f
+mtr_make_rot2d	matrix.c	/^error_t mtr_make_rot2d(matrix_t* const m, const double phi)$/;"	f
+mtr_print	matrix.c	/^error_t mtr_print(const matrix_t* m)$/;"	f
+mtr_product	matrix.c	/^error_t mtr_product(const matrix_t* const left, const matrix_t* const right, matrix_t* const res)$/;"	f
+mtr_product_	matrix.c	/^matrix_t* mtr_product_(const matrix_t* left, const matrix_t* right)$/;"	f
+mtr_product_withT	matrix.c	/^error_t mtr_product_withT(const matrix_t* const left, const matrix_t* const right, matrix_t* const res)$/;"	f
+mtr_set	matrix.c	/^error_t mtr_set(matrix_t* m, const uint8_t row, const uint8_t col, const double val)$/;"	f
+mtr_transpose	matrix.c	/^error_t mtr_transpose(const matrix_t* m, matrix_t* const res)$/;"	f
+mtr_transpose_	matrix.c	/^matrix_t* mtr_transpose_(const matrix_t* m)$/;"	f
+mydt_s	clbr_test.c	/^static double		dt_s,	mydt_s, prev_mydt_s;$/;"	v	file:
+mydt_s	server.c	/^static double		dt_s,	mydt_s, prev_mydt_s;$/;"	v	file:
+myprevtime	clbr_test.c	/^static struct timeval	mytime, myprevtime;$/;"	v	typeref:struct:	file:
+myprevtime	server.c	/^static struct timeval	mytime, myprevtime;$/;"	v	typeref:struct:	file:
+mytime	clbr_test.c	/^static struct timeval	mytime, myprevtime;$/;"	v	typeref:struct:timeval	file:
+mytime	server.c	/^static struct timeval	mytime, myprevtime;$/;"	v	typeref:struct:timeval	file:
+ncols	matrix.h	/^        uint8_t ncols;$/;"	m	struct:matrix_t
+next	beacon.h	/^	struct beaconnode_t *next;$/;"	m	struct:beaconnode_t	typeref:struct:beaconnode_t::beaconnode_t
+next	sensor.h	/^	struct sensornode_t* next;$/;"	m	struct:sensornode_t	typeref:struct:sensornode_t::sensornode_t
+nresets	clbr_test.c	/^static uint8_t	nresets[6][6];$/;"	v	file:
+nrows	matrix.h	/^	uint8_t nrows;$/;"	m	struct:matrix_t
+num	movavg.h	/^	size_t num;$/;"	m	struct:__anon6
+num_measurements	calibrator.h	/^    uint8_t  num_measurements;$/;"	m	struct:__anon1
+offset	linreg.h	/^	double offset;$/;"	m	struct:linreg_t
+out_cnt	circbuf.h	/^	unsigned int out_cnt;$/;"	m	struct:circbuf_t
+pln_dist_L1	planimetrics.c	/^cm_t pln_dist_L1(const position2d_t* const p1, const position2d_t* const p2)$/;"	f
+pln_dist_L2	planimetrics.c	/^cm_t pln_dist_L2(const position2d_t* const p1, const position2d_t* const p2)$/;"	f
+pln_dist_L2_2	planimetrics.c	/^cm_t pln_dist_L2_2(const position2d_t* const p1, const position2d_t* const p2)$/;"	f
+pln_get_angle	planimetrics.c	/^double pln_get_angle(const cm_t const* u, const cm_t const* v, const size_t dim)$/;"	f
+pln_get_centroid	planimetrics.c	/^error_t pln_get_centroid(const sensorlist_t* const list, position2d_t* const pos)$/;"	f
+pos_mlat2d	position.c	/^error_t pos_mlat2d(const position2d_t* const positions,$/;"	f
+pos_mlat3d	position.c	/^error_t pos_mlat3d(const position3d_t* const positions,$/;"	f
+position	beacon.h	/^	position3d_t position; \/** Beacon position *\/$/;"	m	struct:beacon_t
+position	vehicle.h	/^	position2d_t position;$/;"	m	struct:__anon11
+position2d_t	position.h	/^    } position2d_t;$/;"	t	typeref:struct:__anon7
+position3d_t	position.h	/^    } position3d_t;$/;"	t	typeref:struct:__anon8
+position_mnt	sensor.h	/^	position2d_t    position_mnt;$/;"	m	struct:sensor_t
+position_vcs	sensor.h	/^	position2d_t    position_vcs;$/;"	m	struct:sensor_t
+position_vcs_est	sensor.h	/^	position2d_t    position_vcs_est;$/;"	m	struct:sensor_t
+position_wcs	sensor.h	/^	position3d_t    position_wcs;$/;"	m	struct:sensor_t
+prev_mean	movavg.h	/^	double prev_mean;$/;"	m	struct:__anon6
+prev_mydt_s	clbr_test.c	/^static double		dt_s,	mydt_s, prev_mydt_s;$/;"	v	file:
+prev_mydt_s	server.c	/^static double		dt_s,	mydt_s, prev_mydt_s;$/;"	v	file:
+prev_position	vehicle.h	/^	position2d_t prev_position;  $/;"	m	struct:__anon11
+prev_position_wcs	sensor.h	/^	position3d_t    prev_position_wcs;$/;"	m	struct:sensor_t
+prev_timestamp_us	sensor.h	/^	uint64_t     prev_timestamp_us;$/;"	m	struct:sensor_t
+prev_timestamp_us	vehicle.h	/^	uint64_t     prev_timestamp_us;$/;"	m	struct:__anon11
+qsolve	solve.c	/^error_t qsolve (const double a, const double b, const double c, double res[2])$/;"	f
+qu_tmp	signal.c	/^static sample_t qu_tmp[BUFFER_LEN];$/;"	v	file:
+rawsig	sensor.h	/^	sample_t rawsig[BUFFER_LEN];$/;"	m	struct:sensor_t
+rawsig	server.h	/^	sample_t* rawsig;$/;"	m	struct:__anon9
+real_dist	clbr_test.c	/^static double	*real_dist[6][6];$/;"	v	file:
+relfac	signal.c	/^const float relfac = 2;$/;"	v
+res	linreg.h	/^	matrix_t* res;$/;"	m	struct:linreg_t
+res	math_fixed.c	/^static volatile fixed_lt res;$/;"	v	file:
+right	signal.c	/^static volatile size_t left,right;$/;"	v	file:
+rot_speed	vehicle.h	/^	double       rot_speed;  \/* [rad\/s] *\/$/;"	m	struct:__anon11
+rotation	vehicle.h	/^	double       rotation;   \/* [rad] *\/$/;"	m	struct:__anon11
+sample_lt	signal.h	41;"	d
+sample_lt	signal.h	46;"	d
+sample_t	signal.h	40;"	d
+sample_t	signal.h	45;"	d
+sample_ult	signal.h	43;"	d
+sample_ult	signal.h	48;"	d
+sample_ut	signal.h	42;"	d
+sample_ut	signal.h	47;"	d
+sensor	sensor.h	/^	sensor_t* sensor;$/;"	m	struct:sensornode_t
+sensor_id	messaging.h	/^    uint8_t  sensor_id; \/** Sensor ID *\/$/;"	m	struct:__anon5
+sensor_t	sensor.h	/^	} sensor_t;$/;"	t	typeref:struct:sensor_t
+sensor_t	sensor.h	/^    typedef struct sensor_t {$/;"	s
+sensorlist	vehicle.h	/^	sensorlist_t sensorlist;$/;"	m	struct:__anon11
+sensorlist_t	sensor.h	/^    typedef sensornode_t* sensorlist_t;    $/;"	t
+sensornode_t	sensor.h	/^    typedef struct sensornode_t {$/;"	s
+sensornode_t	sensor.h	/^    } sensornode_t;$/;"	t	typeref:struct:sensornode_t
+serialdev	server.h	/^	char serialdev[32];$/;"	m	struct:__anon9
+server_t	server.h	/^    } server_t;$/;"	t	typeref:struct:__anon9
+sig_apply_gauss	signal.c	/^void sig_apply_gauss(sample_t* in, const size_t len)$/;"	f
+sig_apply_rectangular_window	signal.c	/^void sig_apply_rectangular_window(sample_t* const sig, const size_t framelen, const size_t center, const size_t winlen)$/;"	f
+sig_apply_window	signal.c	/^void sig_apply_window(sample_t* const buf, const sample_t* win, const size_t buflen, const size_t winlen, const size_t center) {$/;"	f
+sig_decode	signal.c	/^error_t sig_decode(const sample_t* in, const size_t len, sample_t* out_inph, sample_t* out_qu)$/;"	f
+sig_derivative	signal.c	/^void sig_derivative(const sample_t* sig, sample_t* const deriv, const size_t len)$/;"	f
+sig_envelope	signal.c	/^void sig_envelope(const sample_t* sig, sample_t* const envel, const size_t len)$/;"	f
+sig_get_3max_mag	signal.c	/^error_t sig_get_3max_mag(const sample_t* in, const size_t len, size_t out_t[3], sample_t out_m[3])$/;"	f
+sig_get_parabola_suppts	signal.c	/^error_t sig_get_parabola_suppts(const sample_t* in, const size_t len, size_t out_t[3], sample_t out_m[3])$/;"	f
+sig_get_pos_of_max	signal.c	/^size_t sig_get_pos_of_max(const sample_t* in, const size_t len)$/;"	f
+sig_get_timeofflight	signal.c	/^float sig_get_timeofflight(sample_t* const rawsig, size_t len)$/;"	f
+sig_get_width	signal.c	/^uint8_t sig_get_width(const sample_t* en, const size_t maxpos, const size_t len, sample_t threshold, size_t* newmaxpos)$/;"	f
+sig_inphase_component	signal.c	/^void sig_inphase_component(const sample_t* in, const size_t len, sample_t* out)$/;"	f
+sig_inphase_filter_simplified	signal.c	/^void sig_inphase_filter_simplified(const sample_t* in, const size_t len, sample_t* out)$/;"	f
+sig_inphase_signal	signal.c	/^void sig_inphase_signal(const sample_t* in, const size_t len, sample_t* out)$/;"	f
+sig_mabs	signal.c	/^void sig_mabs(const sample_t* arr, sample_t* ab, const size_t len)$/;"	f
+sig_magnitude	signal.c	/^void sig_magnitude(const sample_t* in_ip, const sample_t* in_qu, const size_t len, sample_t* out)$/;"	f
+sig_normalize	signal.c	/^void sig_normalize(sample_t* const in, const size_t len)$/;"	f
+sig_quadrature_component	signal.c	/^void sig_quadrature_component(const sample_t* in, const size_t len, sample_t* out)$/;"	f
+sig_quadrature_filter_simplified	signal.c	/^void sig_quadrature_filter_simplified(const sample_t* in, const size_t len, sample_t* out)$/;"	f
+sig_quadrature_signal	signal.c	/^void sig_quadrature_signal(const sample_t* in, const size_t len, sample_t* out)$/;"	f
+sig_remove_dc	signal.c	/^void sig_remove_dc(sample_t* rawsig, size_t len)$/;"	f
+sig_scale	signal.c	/^void sig_scale(sample_t* in, const size_t len, const sample_t valmax)$/;"	f
+sig_smooth	signal.c	/^void sig_smooth(sample_t* in, sample_t* out, const size_t len)$/;"	f
+sig_speed_of_sound_mps	signal.c	/^double sig_speed_of_sound_mps(const double T \/*deg C*\/)$/;"	f
+sig_zcr	signal.c	/^float sig_zcr(const sample_t* frame, const size_t len)$/;"	f
+sinc	math_float.c	/^float sinc(const float x)$/;"	f
+sio_open_serial	serial.c	/^int sio_open_serial(const char* dev)$/;"	f
+size	circbuf.h	/^	size_t       size;$/;"	m	struct:circbuf_t
+sl	clbr_test.c	/^static sensorlist_t	sl;$/;"	v	file:
+sn	clbr_test.c	/^static sensornode_t*	sn;$/;"	v	file:
+sns_add_beaconlist	sensor.c	/^void sns_add_beaconlist(sensor_t* s, const beaconlist_t bl)$/;"	f
+sns_add_to_list	sensor.c	/^error_t sns_add_to_list(sensornode_t** sensorlist, sensor_t* s)$/;"	f
+sns_calc_dist_score	sensor.c	/^double sns_calc_dist_score(sensor_t * s, const uint8_t bid)$/;"	f
+sns_calc_mlat_score	sensor.c	/^double sns_calc_mlat_score(sensor_t* const s)$/;"	f
+sns_check_dist	sensor.c	/^double sns_check_dist(sensor_t* const s, const uint8_t bid,$/;"	f
+sns_check_new_position	sensor.c	/^error_t sns_check_new_position(sensor_t* s)$/;"	f
+sns_count	sensor.c	/^uint8_t sns_count(sensornode_t** const sensorlist, const uint8_t mask)$/;"	f
+sns_count_visible_beacons	sensor.c	/^uint8_t sns_count_visible_beacons(const sensor_t* const s)$/;"	f
+sns_free	sensor.c	/^void sns_free(sensor_t* const s)$/;"	f
+sns_get_byID	sensor.c	/^sensornode_t* sns_get_byID(sensornode_t** sensorlist, uint8_t const id)$/;"	f
+sns_get_distance	sensor.c	/^cm_t sns_get_distance(const sensor_t const* s, const uint8_t bid) {$/;"	f
+sns_get_filtered_distance	sensor.c	/^cm_t sns_get_filtered_distance(const sensor_t const* s, const uint8_t bid) {$/;"	f
+sns_get_filtered_position	sensor.c	/^position2d_t sns_get_filtered_position(sensor_t* s) {$/;"	f
+sns_get_filtered_tof	sensor.c	/^double sns_get_filtered_tof(const sensor_t const* s, const uint8_t bid) {$/;"	f
+sns_get_tof	sensor.c	/^double sns_get_tof(const sensor_t const* s, const uint8_t bid) {$/;"	f
+sns_list_sensors	sensor.c	/^void sns_list_sensors(sensornode_t** sensorlist)$/;"	f
+sns_mlat2d	sensor.c	/^error_t sns_mlat2d(sensor_t* const s)$/;"	f
+sns_mlat3d	sensor.c	/^error_t sns_mlat3d(sensor_t* const s)$/;"	f
+sns_moved_cm	sensor.c	/^cm_t sns_moved_cm(const sensor_t* const s)$/;"	f
+sns_new	sensor.c	/^sensor_t sns_new(const uint8_t id, const cm_t x_mnt, const cm_t y_mnt, const cm_t z_mnt)$/;"	f
+sns_pos2dist2d	sensor.c	/^cm_t sns_pos2dist2d(const position2d_t* const p1, const position2d_t* const p2)$/;"	f
+sns_pos2dist3d	sensor.c	/^cm_t sns_pos2dist3d(const position3d_t* const p1, const position3d_t* const p2)$/;"	f
+sns_print	sensor.c	/^void sns_print(const sensor_t* const sensor)$/;"	f
+sns_read_config	sensor.c	/^error_t sns_read_config(const char* fn, sensorlist_t* sl)$/;"	f
+sns_set_flag	sensor.c	/^void sns_set_flag(sensor_t* s, const uint8_t f)$/;"	f
+sns_unset_flag	sensor.c	/^void sns_unset_flag(sensor_t* s, const uint8_t f)$/;"	f
+sns_update_kf	sensor.c	/^error_t sns_update_kf(sensor_t* s) {$/;"	f
+sns_update_timestamp	sensor.c	/^void sns_update_timestamp(sensor_t* s, const uint64_t ts)$/;"	f
+sos	calibrator.h	/^    double   sos;$/;"	m	struct:__anon1
+sos	sensor.c	/^const float sos = (331.3 * sqrt(1.0 + 25 \/ 273.15));$/;"	v
+stage	server.h	/^	stage_t  stage;$/;"	m	struct:__anon9
+stage_t	stage.h	/^} stage_t;$/;"	t	typeref:struct:__anon10
+stddev	linreg.h	/^	double stddev;$/;"	m	struct:linreg_t
+steady	kalman.h	/^	uint8_t  steady;$/;"	m	struct:__anon3
+steady_cnt	kalman.h	/^	uint16_t steady_cnt;$/;"	m	struct:__anon3
+stg_init_from_config	stage.c	/^error_t stg_init_from_config(stage_t* stage, const char* cfile)$/;"	f
+stop	server.h	/^	uint8_t stop;$/;"	m	struct:__anon9
+sum	math_fixed.c	/^static volatile fixed_lt sum;$/;"	v	file:
+t_correction	clbr_test.c	/^static double		t_correction = 0;$/;"	v	file:
+t_correction	server.c	/^static double		t_correction = 0;$/;"	v	file:
+timestamp	messaging.h	/^    uint32_t timestamp; \/** Timestamp *\/$/;"	m	struct:__anon5
+timestamp_us	sensor.h	/^	uint64_t     timestamp_us;$/;"	m	struct:sensor_t
+timestamp_us	vehicle.h	/^	uint64_t     timestamp_us;$/;"	m	struct:__anon11
+tof	calibrator.h	/^    double*** tof;$/;"	m	struct:__anon1
+tof_dist	clbr_test.c	/^static double	*tof_dist[6][6];$/;"	v	file:
+transition_noise	kalman.h	/^	double   transition_noise;$/;"	m	struct:__anon3
+ts_us	server.c	/^static uint64_t		ts_us;$/;"	v	file:
+type	matrix.h	/^	uint8_t type;$/;"	m	struct:matrix_t
+type	messaging.h	/^    uint8_t  type;      \/\/\/< message type (DIST, COMMAND, RAWDATA)$/;"	m	struct:__anon5
+u	kalman.h	/^	matrix_t* u; \/* control inputs *\/$/;"	m	struct:__anon3
+var	movavg.h	/^	double var;$/;"	m	struct:__anon6
+veh_calc_position	vehicle.c	/^error_t veh_calc_position(vehicle_t * const vh)$/;"	f
+veh_calc_rotation	vehicle.c	/^error_t veh_calc_rotation(vehicle_t * const vh)$/;"	f
+veh_check_new_position	vehicle.c	/^error_t veh_check_new_position(vehicle_t* vh)$/;"	f
+veh_get_filtered_position	vehicle.c	/^position2d_t veh_get_filtered_position(const vehicle_t* const v)$/;"	f
+veh_get_position	vehicle.c	/^position2d_t veh_get_position(const vehicle_t* const v)$/;"	f
+veh_get_rotation	vehicle.c	/^double veh_get_rotation(const vehicle_t * const v)$/;"	f
+veh_init	vehicle.c	/^error_t veh_init(vehicle_t * const v, const uint8_t id, sensorlist_t sl) {$/;"	f
+veh_is_moving	vehicle.c	/^uint8_t veh_is_moving(const vehicle_t* const v)$/;"	f
+veh_set_moving	vehicle.c	/^void veh_set_moving(vehicle_t* const v, const uint8_t m)$/;"	f
+veh_set_position	vehicle.c	/^void veh_set_position(vehicle_t * const v, const position2d_t * const p)$/;"	f
+veh_update_kfs	vehicle.c	/^error_t veh_update_kfs(vehicle_t * const vh)$/;"	f
+veh_update_timestamp	vehicle.c	/^void veh_update_timestamp(vehicle_t* vh, const uint64_t ts)$/;"	f
+vehicle	stage.h	/^    vehicle_t vehicle;$/;"	m	struct:__anon10
+vehicle_t	vehicle.h	/^    } vehicle_t;$/;"	t	typeref:struct:__anon11
+vx	kalman.h	/^	cmps_t vx;$/;"	m	struct:__anon2
+vx	vehicle.h	/^	cm_t         vx;$/;"	m	struct:__anon11
+vy	kalman.h	/^	cmps_t vy;$/;"	m	struct:__anon2
+vy	vehicle.h	/^	cm_t         vy;$/;"	m	struct:__anon11
+w	kalman.h	/^	matrix_t* w; \/* process (=transition) noise *\/$/;"	m	struct:__anon3
+w_noise	kalman.h	/^	double   w_noise;$/;"	m	struct:__anon3
+width	stage.h	/^    cm_t width;$/;"	m	struct:__anon10
+x	kalman.h	/^	cm_t x;$/;"	m	struct:__anon2
+x	kalman.h	/^	matrix_t* x; \/* estimated sensor state *\/$/;"	m	struct:__anon3
+x	position.h	/^	cm_t x;$/;"	m	struct:__anon7
+x	position.h	/^	cm_t x;$/;"	m	struct:__anon8
+x_	kalman.h	/^	matrix_t* x_; \/* predicted state *\/$/;"	m	struct:__anon3
+y	kalman.h	/^	cm_t y;$/;"	m	struct:__anon2
+y	position.h	/^	cm_t y;$/;"	m	struct:__anon7
+y	position.h	/^	cm_t y;$/;"	m	struct:__anon8
+z	kalman.h	/^	matrix_t* z;  \/* measured state *\/$/;"	m	struct:__anon3
+z	position.h	/^	cm_t z;$/;"	m	struct:__anon8

@@ -1,0 +1,25 @@
+#!/usr/bin/gnuplot
+
+set multiplot layout 5,1
+
+set bmargin at screen 0.8
+#set size 1.0,0.25
+#set origin 0.02,.0
+set noxlabel
+set noxtics
+set key left top
+set ylabel "Err x pos [cm]"
+plot "/tmp/tt.txt" u 7 w l lc "blue" title "meas", "/tmp/tt.txt" u 8 w l lc "green" title "Kalman"
+
+#set size 1.0,1.
+#set origin 0,0
+set ytics auto
+set xtics auto
+set xlabel "time [s]"
+set ylabel "x pos [cm]"
+set bmargin at screen 0.1
+set tmargin at screen 0.75
+set key left top 
+plot "/tmp/tt.txt" u 1 w l ls 0 lc "red" title "real", "/tmp/tt.txt" u 3 w l lc "blue" title "measured", "/tmp/tt.txt" u 5 w l ls 10 lc "green" lw 2 title "Kalman"
+
+unset multiplot

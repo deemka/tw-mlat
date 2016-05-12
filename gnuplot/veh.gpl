@@ -1,0 +1,9 @@
+#!/urs/bin/gnuplot
+set grid;
+set size square 1,1; 
+set xrange [-1500:1500]; 
+set yrange [-1500:1500]; 
+plot "/tmp/mlat.txt" w circles
+#, "/tmp/mlat_s1.txt" w mlat, "/tmp/mlat_s3.txt" w mlat, "/tmp/mlat_s4.txt" w mlat
+pause .2
+reread

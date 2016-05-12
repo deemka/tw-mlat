@@ -1,0 +1,579 @@
+
+beacon.c,461
+beacon_t bcn_init(9,181
+beacon_t bcn_new(21,443
+error_t bcn_add_to_list(33,647
+error_t bcn_append(58,1307
+beaconnode_t* bcn_get_byID(83,1891
+error_t bcn_remove_byID(96,2117
+uint8_t bcn_count(119,2577
+int8_t bcn_is_visible(133,2848
+int8_t bcn_is_ignored(138,2947
+uint8_t beacon_count_visible(143,3046
+error_t bcn_ignore_byID(149,3213
+void bcn_ignore(163,3509
+void bcn_print(168,3588
+void bcn_list_beacons(174,3787
+error_t bcn_read_config(186,3997
+
+calibrator.c,100
+error_t clb_read_config(7,128
+error_t clb_calc_for_sbpair(71,1861
+int clb_make_clb_conf(120,2984
+
+circbuf.c,360
+size_t cb_space_available(9,162
+error_t cb_init(14,258
+error_t cb_free(31,704
+error_t cb_put_data(38,808
+error_t cb_get_data(65,1602
+static char const* err_no_error 94,2346
+static char const* err_buffer_overrun 95,2400
+static char const* err_buffer_onderrun 96,2460
+static char const* err_allocation_error 97,2521
+char const* cb_lookup_error(99,2593
+
+clbr_test.c,876
+#define MAX_STDDEV 15,251
+#define RESET_STDDEV 17,358
+#define MAX_MCANUM 18,449
+#define MAX_RESETS 19,534
+#define MAX_TOF_FAILURE 20,629
+static int	fd;22,720
+static matrix_t *clb_gain;clb_gain25,754
+static matrix_t *clb_offset;clb_offset26,781
+static double	*tof_dist[tof_dist28,811
+static double	*real_dist[real_dist29,842
+static uint8_t	nresets[nresets31,875
+static size_t	len[len32,905
+static beaconlist_t	bl;34,931
+static sensorlist_t	sl;35,955
+static beaconnode_t*	bn;36,979
+static sensornode_t*	sn;37,1004
+static double		t_correction 39,1030
+static double		dt_s,40,1063
+static double		dt_s,	mydt_s,40,1063
+static double		dt_s,	mydt_s, prev_mydt_s;40,1063
+static struct timeval	mytime,41,1105
+static struct timeval	mytime, myprevtime;41,1105
+static movavg_t mav_dt;42,1147
+static int		firstrun 43,1171
+void calc_(45,1202
+int main(105,2754
+
+errors.c,354
+static char* errNoErr 4,67
+static char* errMalloc 5,108
+static char* errNodeNotFound 6,154
+static char* errNotANumber 7,208
+static char* errRead 8,282
+static char* errWrite 9,324
+static char* errCommunication 10,368
+static char* errMtrDim 11,428
+static char* errArrDim 12,479
+static char* errNotEnoughData 13,529
+char const * errLookup(15,586
+
+kalman.c,373
+static double change_sign(7,172
+error_t kf_init(12,238
+void kf_set_trans_noise(143,4079
+void kf_set_meas_noise(148,4186
+error_t kf_predict_state(153,4293
+error_t kf_predict_cov(170,4789
+error_t kf_adjust_gain(185,5206
+error_t kf_adjust_state(203,5727
+error_t kf_adjust_cov(218,6179
+error_t kf_update(230,6548
+error_t kf_is_steady(290,8221
+void kf_free(295,8297
+
+linreg.c,74
+error_t lr_init(5,86
+void lr_update_data(18,395
+error_t lr_calc(25,530
+
+main.c,154
+#define VEH_WTH 24,483
+#define VEH_LEN 25,505
+#define NOISE 26,527
+#define DISPLACE 27,543
+int main3(29,594
+int main2(260,10521
+int main(364,14180
+
+math_fixed.c,168
+static volatile fixed_lt sum;3,74
+static volatile fixed_lt res;4,104
+fixed_t fx_sin(14,426
+fixed_t fx_sinc(35,749
+fixed_ut fx_sqrt(41,888
+fixed_t fx_mean(61,1255
+
+math_float.c,153
+float sinc(9,170
+float gauss(14,259
+float get_parabola_extremum_x(54,1381
+double mean(59,1491
+static int compare_flt(68,1658
+double median(73,1760
+
+matrix.c,590
+matrix_t* mtr_alloc(13,211
+void mtr_free(33,674
+error_t mtr_set(41,778
+double mtr_get(50,1012
+error_t mtr_transpose(60,1247
+matrix_t* mtr_transpose_(91,1993
+error_t mtr_add(104,2317
+error_t mtr_product(132,3174
+matrix_t* mtr_product_(169,4175
+error_t  mtr_apply_to_pos2d(196,4797
+error_t mtr_product_withT(217,5306
+matrix_t* mtr_inverse2x2_(255,6372
+error_t mtr_inverse2x2(273,6818
+error_t mtr_inverse3x3(304,7621
+error_t mtr_inverse4x4(359,9528
+error_t mtr_foreach(536,17777
+error_t mtr_make_rot2d(548,18055
+error_t mtr_append_rows(561,18341
+error_t mtr_print(580,19087
+
+messaging.c,54
+#undef DEBUG 9,187
+int msg_read_next_message(15,242
+
+movavg.c,143
+void  mav_init(7,105
+void  mav_update_mean(14,191
+double  mav_get_mean(22,383
+double  mav_get_stddev(27,457
+double mav_get_z_score(32,546
+
+planimetrics.c,140
+double pln_get_angle(6,115
+error_t pln_get_centroid(22,395
+cm_t pln_dist_L2(46,903
+cm_t pln_dist_L2_2(51,1062
+cm_t pln_dist_L1(56,1216
+
+position.c,54
+error_t pos_mlat2d(6,126
+error_t pos_mlat3d(66,1722
+
+sensor.c,990
+#define MAX_BEACON_ID 13,248
+const float sos 15,274
+static int compar_dbl(17,329
+sensor_t sns_new(29,515
+void sns_add_beaconlist(47,1069
+void sns_set_flag(69,1557
+void sns_unset_flag(74,1629
+error_t sns_add_to_list(79,1715
+void sns_free(124,3359
+uint8_t sns_count_visible_beacons(129,3421
+sensornode_t* sns_get_byID(144,3733
+uint8_t sns_count(157,3999
+error_t sns_mlat2d(171,4281
+cm_t sns_get_distance(357,9682
+cm_t sns_get_filtered_distance(361,9783
+double sns_get_tof(365,9913
+double sns_get_filtered_tof(369,10015
+position2d_t sns_get_filtered_position(373,10142
+error_t sns_check_new_position(380,10335
+error_t sns_update_kf(405,11292
+void sns_update_timestamp(416,11621
+error_t sns_read_config(422,11754
+cm_t sns_pos2dist2d(461,13007
+cm_t sns_pos2dist3d(467,13182
+void sns_print(474,13394
+void sns_list_sensors(480,13605
+double sns_calc_dist_score(492,13815
+double sns_check_dist(502,14197
+cm_t sns_moved_cm(524,14945
+double sns_calc_mlat_score(532,15205
+
+serial.c,51
+#define NDEBUG 12,227
+int sio_open_serial(18,286
+
+server.c,581
+#define  TEST_SNS_ID 26,533
+#define  LAST_BID 27,560
+#define  DO_MLAT 28,587
+#define  CALC_POSITION 29,639
+#define  MAKE_DISTMATRIX 30,688
+#define  LOG_DATA 31,715
+static int		fd;33,743
+static struct timeval	mytime,35,778
+static struct timeval	mytime, myprevtime;35,778
+static uint64_t		ts_us;36,820
+static double		t_correction 37,844
+static double		dt_s,38,877
+static double		dt_s,	mydt_s,38,877
+static double		dt_s,	mydt_s, prev_mydt_s;38,877
+static movavg_t mav_dt;39,919
+static int		firstrun 40,943
+void *beep(beep42,974
+double inv(50,1116
+int main(52,1157
+
+signal.c,1221
+#define M_PI 10,181
+#define M_TWOPI 13,243
+#define REMOVE_DC 21,374
+const float relfac 23,395
+static volatile size_t i;24,419
+static volatile size_t left,25,445
+static volatile size_t left,right;25,445
+static sample_t ip_tmp[ip_tmp26,480
+static sample_t qu_tmp[qu_tmp27,516
+sample_t* generate_burst(32,722
+void sig_apply_gauss(50,1307
+void sig_normalize(60,1578
+void sig_inphase_filter_simplified(75,1826
+void sig_quadrature_filter_simplified(85,2106
+void sig_inphase_signal(94,2407
+void sig_quadrature_signal(124,2872
+void sig_inphase_component(154,3343
+void sig_quadrature_component(167,3685
+void sig_magnitude(172,3814
+error_t sig_decode(184,4167
+void sig_scale(198,4598
+size_t sig_get_pos_of_max(209,4807
+error_t sig_get_3max_mag(222,5029
+error_t sig_get_parabola_suppts(239,5478
+double sig_speed_of_sound_mps(282,6308
+void sig_apply_window(287,6402
+void sig_derivative(310,6884
+void sig_envelope(319,7065
+void sig_mabs(335,7400
+uint8_t sig_get_width(342,7563
+void sig_smooth(377,8183
+float sig_zcr(387,8373
+void sig_apply_rectangular_window(400,8617
+void sig_remove_dc(417,9057
+float sig_get_timeofflight(427,9291
+void sig_filter_init(495,11550
+void sig_filter_apply(507,12014
+
+solve.c,59
+static volatile error_t err 10,148
+error_t qsolve 12,192
+
+stage.c,35
+error_t stg_init_from_config(4,43
+
+stubs.c,33
+int main1(5,62
+int main(26,518
+
+test.c,15
+int main(4,40
+
+vehicle.c,440
+static int compar_cm(6,123
+uint8_t veh_is_moving(18,305
+void veh_set_moving(23,394
+error_t veh_init(28,484
+void veh_set_position(39,740
+position2d_t veh_get_position(45,870
+double veh_get_rotation(50,955
+position2d_t veh_get_filtered_position(55,1035
+error_t veh_calc_rotation(63,1223
+error_t veh_calc_position(124,2785
+error_t veh_update_kfs(198,4512
+error_t veh_check_new_position(214,4989
+void veh_update_timestamp(233,5721
+
+beacon.h,489
+#define BEACON_H5,134
+#define BCN_ANY 13,262
+#define BCN_VISIBLE 14,298
+#define BCN_IGNORED 15,336
+#define BCN_POSKNOWN 16,374
+#define BCN_ISREF 17,412
+    typedef struct beacon_t 24,554
+	uint8_t id;25,584
+	uint8_t flags;26,626
+	position3d_t position;27,707
+    } beacon_t;28,754
+    typedef struct beaconnode_t 31,825
+	beacon_t            *beacon;beacon32,859
+	struct beaconnode_t *next;next33,889
+    } beaconnode_t;34,917
+    typedef beaconnode_t* beaconlist_t;37,969
+
+calibrator.h,233
+#define CALIBRATOR_H3,85
+    double** clbr_fac;13,227
+    double** clbr_offset;14,250
+    uint8_t  num_measurements;15,276
+    double*** tof;16,307
+    double*** distances;17,326
+    double   sos;18,351
+} calibrator_t;19,369
+
+circbuf.h,235
+#define CIRCBUF_H6,113
+    typedef struct circbuf_t 15,217
+	unsigned int in_cnt;16,248
+	unsigned int out_cnt;17,270
+	size_t       capacity;18,293
+	size_t       size;19,317
+	char         *data;data20,337
+    } circbuf_t;21,358
+
+errors.h,429
+#define ERRORS_H3,77
+typedef int16_t  error_t;8,137
+#define ERR_NOERROR 10,164
+#define ERR_MALLOC 11,194
+#define ERR_NODENOTFOUND 12,228
+#define ERR_NOTANUMBER 13,262
+#define ERR_READERROR 14,296
+#define ERR_WRITEERROR 15,330
+#define ERR_COMMUNICATION 16,364
+#define ERR_MTR_DIM 17,398
+#define ERR_ARRAY_DIM 18,432
+#define ERR_NOTENOUGHDATA 19,466
+#define ERR_BUFFEROVERRUN 20,500
+#define ERR_BUFFERUNDERRUN 21,535
+
+kalman.h,1021
+#define KALMAN_H3,81
+#define DT_MS 9,162
+#define TRANS_NOISE 10,180
+#define MEAS_NOISE 11,206
+#define W_NOISE 12,237
+#define KF_STEADY_DELTA 13,263
+#define KF_SAMPLES_STEADY 14,294
+	cm_t x;21,389
+	cm_t y;22,398
+	cmps_t vx;23,407
+	cmps_t vy;24,419
+    } kf_state_t;25,431
+	int16_t  dt_ms;28,475
+	uint64_t counter;29,492
+	uint8_t  steady;30,511
+	uint16_t steady_cnt;31,529
+	double   transition_noise;32,551
+	double   measurement_noise;33,579
+	double   w_noise;34,608
+	matrix_t* x;35,627
+	matrix_t* F;36,670
+	matrix_t* B;37,708
+	matrix_t* u;38,749
+	matrix_t* H;39,784
+	matrix_t* K;40,856
+	matrix_t* w;41,888
+	matrix_t* Q;42,936
+	matrix_t* P;43,1010
+	matrix_t* R;44,1058
+	matrix_t* x_;46,1147
+	matrix_t* _x;47,1184
+	matrix_t* P_;48,1220
+	matrix_t* z;50,1270
+	matrix_t* dz;51,1306
+	matrix_t* dummy1_41;53,1346
+	matrix_t* dummy1_44;54,1368
+	matrix_t* dummy1_14;55,1390
+	matrix_t* dummy2_41;56,1412
+	matrix_t* dummy2_44;57,1434
+	matrix_t* dummy2_14;58,1456
+    } kalman_filter_t;60,1479
+
+linreg.h,374
+#define LINREG_H5,83
+#define LR_LEN 11,160
+    typedef struct linreg_t 17,218
+	double data[data18,248
+	double gain;19,270
+	double offset;20,284
+	double stddev;21,300
+	uint8_t cnt;22,316
+	matrix_t* A;23,330
+	matrix_t* b;24,344
+	matrix_t* At;25,358
+	matrix_t* Pinv;26,373
+	matrix_t* Ainv;27,390
+	matrix_t* P;28,407
+	matrix_t* res;29,421
+    } linreg_t;30,437
+
+math_fixed.h,214
+#define MATH_FIXED_H3,71
+#define M_PI 8,146
+#define M_TWOPI 11,208
+typedef sample_t   fixed_t;14,255
+typedef sample_lt  fixed_lt;15,283
+typedef sample_ut  fixed_ut;16,312
+typedef sample_ult fixed_ult;17,341
+
+math_float.h,70
+#define MATH_FLOAT_H3,86
+#define M_PI 8,161
+#define M_TWOPI 11,223
+
+matrix.h,237
+#define MATRIX_H3,77
+	MTR_ID 13,208
+	MTR_DIAG 14,250
+	MTR_ZERO 15,292
+    typedef struct matrix_t 18,338
+	uint8_t type;19,368
+	uint8_t nrows;20,383
+        uint8_t ncols;21,399
+        double* data;22,422
+    } matrix_t;23,444
+
+messaging.h,358
+#define MESSAGING_H3,84
+#define MSG_START 7,126
+#define MSG_TYPE_DST 8,177
+#define MSG_TYPE_CMD 9,243
+#define MSG_TYPE_RAW 10,297
+    uint8_t  header;14,395
+    uint8_t  type;15,480
+    uint8_t  beacon_id;16,547
+    uint8_t  sensor_id;17,588
+    uint16_t data_size;18,629
+    uint32_t timestamp;19,717
+}  __attribute__((packed)) message_t;20,758
+
+movavg.h,132
+#define MOVAVG_H5,83
+	double mean;14,183
+	double var;15,197
+	double prev_mean;16,210
+	size_t num;17,229
+    } movavg_t;18,242
+
+planimetrics.h,28
+#define PLANIMETRICS_H3,78
+
+position.h,158
+#define POSITION_H3,83
+	cm_t x;15,247
+	cm_t y;16,256
+    } position2d_t;17,265
+	cm_t x;21,330
+	cm_t y;22,339
+	cm_t z;23,348
+    } position3d_t;24,357
+
+sensor.h,945
+#define SENSOR_H3,81
+#define SNS_ANY 14,263
+#define SNS_USED 15,297
+#define SNS_MLAT_OK 16,331
+    typedef struct sensor_t 23,491
+	uint8_t      id;24,521
+	uint8_t      flags;25,539
+	uint64_t     prev_timestamp_us;26,560
+	uint64_t     timestamp_us;27,593
+	position2d_t    position_mnt;42,1030
+	position2d_t    position_vcs;48,1244
+	position2d_t    position_vcs_est;49,1275
+	position3d_t    position_wcs;52,1380
+	position3d_t    prev_position_wcs;53,1411
+	beaconlist_t    beaconlist;56,1514
+	kalman_filter_t kf_position_wcs;58,1544
+	cm_t*           distances;61,1609
+	kalman_filter_t*  kf_distances;64,1684
+ 	uint8_t*  b_flags;67,1776
+	double*   b_score;68,1797
+	double    mlat_score;69,1817
+	sample_t rawsig[rawsig71,1883
+	} sensor_t;72,1913
+    typedef struct sensornode_t 75,1989
+	sensor_t* sensor;76,2023
+	struct sensornode_t* next;77,2042
+    } sensornode_t;78,2070
+    typedef sensornode_t* sensorlist_t;80,2091
+
+serial.h,22
+#define SERIAL_H3,81
+
+server.h,190
+#define SERVER_H3,81
+	stage_t  stage;15,243
+	sample_t* rawsig;16,260
+	message_t msg;18,281
+	char serialdev[serialdev19,297
+	int fd;20,318
+	uint8_t stop;22,328
+    } server_t;24,344
+
+signal.h,1016
+#define SIGNAL_H6,143
+#define CARRIER_FREQ 15,290
+#define Q_SAMPLING_M 25,504
+#define REC_SAMPLE_RATE 32,637
+#define PULSE_DUR_MSEC 33,702
+static const size_t PULSE_LEN_SMPL 34,730
+#define DISTMAX 35,808
+#define BUFFER_LEN 36,841
+#define SIG_THRESHOLD 37,905
+#define FIXED_POINT_MATH 38,930
+#define sample_t 42,1004
+#define sample_lt 43,1034
+#define sample_ut 44,1064
+#define sample_ult 45,1095
+#define sample_t 47,1132
+#define sample_lt 48,1160
+#define sample_ut 49,1189
+#define sample_ult 50,1220
+#define METER2CM 53,1260
+#define VEH_MAX_SPEED_CMPS 55,1282
+#define BITS_PER_UNIT 58,1336
+#define SAMPLE_MAX 63,1459
+#define SAMPLE_MAX 65,1564
+#define ABS(68,1597
+#define MAX(73,1711
+#define MIN(78,1851
+	double sr_Hz;89,2053
+	double bw_Hz;90,2068
+	size_t idx_center;91,2083
+	size_t idx_bw_delta;92,2103
+	kiss_fftr_cfg cfg,93,2125
+	kiss_fftr_cfg cfg, icfg;93,2125
+	kiss_fft_scalar* sig;94,2151
+	kiss_fft_cpx* spectrum;95,2174
+	kiss_fft_cpx* isig;96,2199
+    } sig_filter_t;97,2220
+
+solve.h,21
+#define SOLVE_H3,66
+
+stage.h,151
+#define STAGE_H3,80
+    cm_t width;11,195
+    cm_t depth;12,211
+    beaconlist_t beaconlist;13,227
+    vehicle_t vehicle;14,256
+} stage_t;15,279
+
+types.h,79
+#define TYPES_H2,16
+typedef double   cm_t;5,53
+typedef double   cmps_t;6,76
+
+vehicle.h,503
+#define VEHICLE_H3,82
+#define VEH_ANY 13,249
+#define VEH_MOVING 14,273
+	uint8_t      id;21,361
+	uint8_t      flags;22,379
+	uint64_t     timestamp_us;23,404
+	uint64_t     prev_timestamp_us;24,432
+	sensorlist_t sensorlist;25,465
+	position2d_t position;26,491
+	position2d_t prev_position;27,515
+	cm_t         vx;28,546
+	cm_t         vy;29,564
+	double       rotation;30,582
+	double       rot_speed;31,620
+	kalman_filter_t kf_pos;32,660
+	kalman_filter_t kf_rot;33,685
+    } vehicle_t;34,710
